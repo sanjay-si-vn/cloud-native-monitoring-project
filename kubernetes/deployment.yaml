@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: juice-app
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: juice-app
+
+  template:
+    metadata:
+      labels:
+        app: juice-app
+
+    spec:
+      containers:
+      - name: juice-app
+        image: sanjay769697/juicewrld-app:latest
+       
+        ports:
+        - containerPort: 3000

@@ -1,0 +1,59 @@
+* {
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #d4d4d4;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #9333ea, #6b21a8);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(147,51,234,0.5);
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  padding: 30px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  transform-style: preserve-3d;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: rotateY(10deg) rotateX(10deg) translateY(-10px);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #c084fc;
+}
+
+.card p {
+  color: #cccccc;
+  line-height: 1.6;
+}
