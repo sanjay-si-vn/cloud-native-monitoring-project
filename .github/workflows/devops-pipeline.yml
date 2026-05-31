@@ -33,8 +33,9 @@ runs-on: ubuntu-latest
 steps:
   - name: Checkout Repository
     uses: actions/checkout@v4
-
+    
   - name: Verify Kubernetes Files
+  - name: Check Kubernetes Files
     run: |
       ls kubernetes
       ls monitoring
